@@ -5,4 +5,5 @@ module javaFX1 {
         
 	opens application to javafx.graphics, javafx.fxml, javafx.controls;
 	opens gui to javafx.fxml;
+	opens model.entities to javafx.base;
 }
