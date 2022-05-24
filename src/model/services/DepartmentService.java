@@ -14,5 +14,10 @@ public class DepartmentService {
 			
 		return dao.findAll();
 	}
+	
+	public void insert(Department department) {
+		
+		dao.insert(department);
+	}
 
 }

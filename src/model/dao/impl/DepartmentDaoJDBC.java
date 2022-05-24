@@ -26,6 +26,8 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 
 		PreparedStatement st = null;
 		try {
+			
+			System.out.println(obj.getName());
 			st = conn.prepareStatement("INSERT INTO department " + "(Name) " + "VALUES (?)",
 					Statement.RETURN_GENERATED_KEYS);
 
